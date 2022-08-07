@@ -21,4 +21,4 @@ if sys.platform == 'win32':
     os.system('cd C:\ytdl')
     os.system('yt-dlp -x --audio-format '+audio_format+' --paths "Downloads/" "'+YT_link+'"')
 elif sys.platform == 'darwin':
-    print('hi')
+    os.system('yt-dlp -x --audio-format m4a --paths "Downloads/" "'+YT_link+'"')
